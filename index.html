@@ -1,216 +1,31 @@
-<html>
-  <head>
-    <title>Jasmine's Website</title>
-  </head>
-      <body>
-        <h1>Jasmine's Website</h1>
-        <h2>Hello world</h2>
-        <img height=34 src='https://cdn.mos.cms.futurecdn.net/MFHVMYQCeJHMGop4u8VkzJ.jpg'>
-        <a target=_blank href="https://www.apple.com/">Apple'swebsite</a>
-        <table>
-          <tr>
-            <td>Data 1</td>
-            <td>Data2</td>
-            <td>Data3</td>
-           
-          </tr>
-        </table>
-        <p id="caption"></p>
-         <button onclick="myFunction()">Hit this button!</button>
-  <script>
-    function myFunction() {
-    document.getElementById("caption").innerHTML = "This is apple";
-  }
-</script>        
-      
-      
-      <table border="">
-        <tr>
-          <td id="X">-</td>
-          <td id="O">-</td>
-          <td id="a">-</td>
-        </tr>
-        <tr>
-          <td id="b">-</td>
-          <td id="c">-</td>
-          <td id="d">-</td>
-        </tr>
-        <tr>
-          <td id="e">-</td> 
-          <td id="f">-</td>
-          <td id="g">-</td>
-        </tr>
-        
-      </table>
-          <button onclick="ToplefttoX()">Top left to X</button>
-           <script>
-    function ToplefttoX() {
-    document.getElementById("X").innerHTML = "X";
-  }
-       
-    function TopmiddletoX() {
-    document.getElementById("O").innerHTML = "X";
-  }
-                 
-           </script>
-          <button onclick="TopmiddletoX()">Top middle to X</button>
-           
-
-           
-                 <script>
-    function ToprighttoX() {
-    document.getElementById("a").innerHTML = "X";
-    }    
-          
-            </script>
-            <button onclick="ToprighttoX()">Top right to X</button>  
-                 
-      
-                 <script>
-    function MiddlelefttoX() {
-    document.getElementById("b").innerHTML ="X";  
-    }    
-           </script>
-           <button onclick="MiddlelefttoX()">Middle left to X</button>
-                 
-                 <script>
-    function MiddleMiddletoc() {
-    document.getElementById("c").innerHTML ="X";
-    }
-           </script>
-           <button onclick="MiddleMiddletoc()">Middle Middle to X</button>
-                
-                
-                <script>
-    function MiddlerighttoX() {
-    document.getElementById("d").innerHTML ="X";    
-    }
-           </script>
-           <button onclick="MiddlerighttoX()">Middle right to X</button>
+<head>
+  <title>Jasmine's Wedsite</title>
+  <style type="text/css">
     
-              <script>
-    function BottomlefttoX() {
-    document.getElementById("e").innerHTML ="X";
+      body {
+        background-color:#c8dbfa;
+      }
+     h1 {
+        color:#46e8dd;
+        font-size:75px;
+        font-family:Courier New;
+      }
+    h2 {
+      color:#f073d9;
+      font-size:50px;
+      font-family:Courier New;
     }
-            </script>
-            <button onclick="BottomlefttoX()">Bottom left to X</button>
-            
-              <script>
-    function BottommiddletoX() {        
-    document.getElementById("f").innerHTML ="X";      
-    }       
-             </script>
-             <button onclick="BottommiddletoX()">Bottom middle to X</button>
-            
-              <script>
-    function BottomrighttoX() {        
-    document.getElementById("g").innerHTML ="X";      
-    }         
-             </script>
-             <button onclick="BottomrighttoX()">Bottom right to X</button>
-             
-              <script>
-    function ToplefttoO() { 
-       var current=document.getElementById("O").innerHTML;
-      if(current ==("O")||current ==("X")){
-        return;
-      }
-    document.getElementById("X").innerHTML ="O";      
-    }        
-             </script>
-             <button onclick="ToplefttoO()">Top left to O</button>
-             
-             <script>
-    function TopmiddletoO() { 
-       var current=document.getElementById("O").innerHTML;
-      if(current ==("O")||current ==("X")){
-        return;
-      }
-    document.getElementById("O").innerHTML ="O";       
-    }         
-             </script>
-              <button onclick="TopmiddletoO()">Top middle to O</button>
-             
-             <script>
-    function Toprighttoplus() { 
-       var current=document.getElementById("plus").innerHTML;
-      if(current ==("O")||current ==("X")){
-        return;
-      }
-    document.getElementById("a").innerHTML ="O";        
-    }         
-             </script>
-             <button onclick="Toprighttoplus()">Top right to O</button>
-             
-             <script>
-    function Middlelefttob() { 
-      var current=document.getElementById("b").innerHTML;
-      if(current ==("O")||current ==("X")){
-        return;
-      }
-    document.getElementById("b").innerHTML ="O";   
-    }    
-             </script>
-             <button onclick="Middlelefttob()">Middle left to O</button>
-        
-             <script>
-    function Middlemiddletoc() { 
-       var current=document.getElementById("c").innerHTML;
-      if(current ==("O")||current ==("X")){
-        return;
-      }
-    document.getElementById("c").innerHTML ="O";         
-    }         
-             </script> 
-            <button onclick="Middlemiddletoc()">Middle middle to O</button>
-              
-             <script>
-    function Middlerighttod() { 
-       var current=document.getElementById("d").innerHTML;
-      if(current ==("O")||current ==("X")){
-        return;
-      }
-    document.getElementById("d").innerHTML ="O";         
-    }         
-             </script> 
-             <button onclick="Middlerighttod()">Middle right to O</button>
-              
-             <script>
-    function Bottomlefttoe() { 
-       var current=document.getElementById("e").innerHTML;
-      if(current ==("O")||current ==("X")){
-        return;
-      }
-    document.getElementById("e").innerHTML ="O";         
-    }          
-             </script> 
-             <button onclick="Bottomlefttoe()">Bottom left to O</button> 
-              
-             <script> 
-    function Bottommiddletof() {
-      var current=document.getElementById("f").innerHTML;
-      if(current ==("O")||current ==("X")){
-        return;
-      }
-    document.getElementById("f").innerHTML ="O";           
-    }            
-             </script>   
-             <button onclick="Bottommiddletof()">Bottom middle to O</button>   
-                
-             <script>
-    function Bottomrighttog() {        
-      var current=document.getElementById("g").innerHTML;
-      if(current ==("O")||current ==("X")){
-        return;
-      }
-    document.getElementById("g").innerHTML="0";            
-    }            
-             </script>   
-             <button onclick="Bottomrighttog()">Bottom right to O</button>   
-                
-                
-                
-                
-                
-                  
-<html>
+       
+  </style>
+</head>
+
+<body>
+  <h1>Salutations!</h1>
+  <h2>Nice to meet you!</h2>
+  
+  <img width=500 src="https://www.oxy.edu/sites/default/files/styles/banner_image/public/landing-page/banner-images/art-art-history_main_1440x800.jpg?itok=56KMNr2k">
+  
+  
+</body>
+
+
